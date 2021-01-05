@@ -1,0 +1,113 @@
+  .info_div{
+    margin-left:50px;
+  }
+  .div_info{
+    float:left;
+  }
+  .title,.creator,.rate,.price{
+    margin-left:50px;
+    padding:8px;
+  }
+  .title,.price{
+    font-size:23px;
+  }
+  .info{
+    width:70%;
+  }
+  .cart_btn{
+    margin-left:50px;
+    margin-right:10px;
+    background:#0f7c90;
+    border:1px solid #0f7c90;
+    color:white;
+    padding:5px 20px;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+  }
+  .buy_btn{
+    background:none;
+    border:1px solid #0f7c90;
+    color:#0f7c90;
+    padding:5px 20px;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+  }
+  .descrip_div{
+    margin-left:50px;
+    width:90%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .descrip_div p{
+    letter-spacing:1px;
+    line-height: 1.6;
+  }
+  .review_div{
+    margin-left:50px;
+  }
+  .rev_img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+  }
+  .review_info_div{
+     float:left;
+  }
+  .review_info_div_data{
+    margin-left:20px;
+    width:70%;
+    margin-right:20%;
+  }
+  .review_info_div_data div{
+    padding:10px;
+    letter-spacing:1px;
+    line-height: 1.6;
+  }
+  .review_info_name{
+    font-weight:bold;
+  }
+  .pipe{
+    color:#ec5252;
+    font-weight:bold;
+    font-size:30px;
+  }
+  hr{
+    color:lightgray;
+  }
+  @media screen and (max-width: 480px) {
+    .title,.creator,.rate,.price{
+      margin-left:0;
+    }
+    .info_div{
+      margin-left:25px;
+    }
+    .cart_btn{
+        margin-left:25px;
+        margin-right:10px;
+    }
+    .descrip_div{
+      margin-left:10px;
+      width:95%;
+    }
+    .review_div{
+      margin-left:10px;
+    }
+    .review_info_div_data{
+      margin-left:0px;
+      width:95%;
+    }
+    .rev_img{
+      height:50px;
+      width:50px;
+      position:absolute;
+    }
+    .review_info_name{
+      margin-left:60px;
+      margin-top:-15px;
+    }
+    .info{
+      width: 90%;
+    }
+  }

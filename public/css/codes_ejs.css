@@ -1,0 +1,39 @@
+ .card_info{
+    float:left;
+    margin-left:5px;
+    width:240px;
+    padding:10px;
+  }
+  .card_info:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  img{
+    width:240px;
+    height:135px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+  .title, .creator,.rate,.price{
+    padding:5px;
+  }
+  .title{
+    font-weight:bold;
+  }
+  .goto{
+    background:none;
+    border:1px solid #0f7c90;
+    color:#0f7c90;
+    width:80px;
+    height:30px;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+  }
+  @media screen and (max-width: 480px) {
+    .card{
+      margin-left:70px;
+    }
+    .card_info{
+      width:240px;
+    }
+  }

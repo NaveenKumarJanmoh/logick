@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- -->
+        <link rel="stylesheet" href="/css/codes_ejs.css">
+    </head>
+    <body>
+        <div class="card">
+        <% if(data.length){
+            for(var i = 0;i < data.length;i++) { %>
+            <div class="card_info">
+              <img src="<%=data[i].image%>">
+              <div class="title"><%=data[i].title%></div>
+              <div class="creator"><%=data[i].creator%></div>
+              <div class="rate"><%=data[i].rate%> start</div>
+              <div class="price">&#8377;<%=data[i].price%></div>
+              <form action="/code_info/<%=data[i].id%>" name="id" method="get">
+                <button type="submit" class="goto">go to</button>
+              </form>
+            </div>
+        </div>
+        <% }
+    }else{%>
+        <center><h1>No data</h1></center>    
+    <%} %>
+    </body>
+</html>
