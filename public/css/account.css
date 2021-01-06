@@ -6,8 +6,9 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-body{
-  padding: 0 10px;
+.log_form{
+  padding: 0 50px;
+  margin-top: 150px;
 }
 .wrapper{
   max-width: 500px;

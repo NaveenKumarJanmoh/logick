@@ -1,11 +1,14 @@
-  img{
+*{
+  box-sizing: border-box;
+}
+form a button img{
     margin-right: 15px;
     height: 40px;
     width: 40px;
     overflow: hidden;
     vertical-align: middle;
   }
-  button{
+ form a button{
     background:white;
     border-radius:10px;
     height:65px;
@@ -17,20 +20,21 @@
     cursor:pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  button:hover{
+  form a button:hover{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
-  div{
+  .btn_form_div{
     width:90%;
     margin-left:140px;
     padding:20px 0px;
+    margin-top: 150px;
   }
-  div form{
+  .btn_form_div form{
       float:left;
       
   }
   @media screen and (max-width: 480px) {
-    div{
+    .btn_form_div{
       margin-left:20px;
     } 
   }

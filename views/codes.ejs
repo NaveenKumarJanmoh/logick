@@ -4,8 +4,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- -->
         <link rel="stylesheet" href="/css/codes_ejs.css">
+        <link rel="stylesheet" href="/css/index.css">
     </head>
     <body>
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">
+                <img src="https://tinyurl.com/y7yk7e7x"/>
+            </a>
+            <!--menu-btn----------->
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="#">code</a>
+                    <ul class="dropdown__menu">
+                        <li><form action="code_upload" method="POST"><button type="submit">upload</button></form></li>
+                        <li><form action="code_purchase" method="POST"><button type="submit">purchase</button></form></li>
+                    </ul>
+                </li>
+                <li><a href="#">course</a>
+                    <ul class="dropdown__menu">
+                        <li><form action="course_upload" method="post"><button type="submit">upload</button></form></li>
+                        <li><form action="course_purchase" method="post"><button type="submit">purchase</button></form></li>
+                    </ul>
+                </li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>  
+            </ul>
+        </nav>
         <div class="card">
         <% if(data.length){
             for(var i = 0;i < data.length;i++) { %>

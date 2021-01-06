@@ -1,13 +1,16 @@
- .card_info{
+  .card{
+    margin-top: 150px;
+  }
+  .card_info{
     float:left;
     margin-left:5px;
-    width:240px;
+    width:243px;
     padding:10px;
   }
   .card_info:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  img{
+  .card .card_info img{
     width:240px;
     height:135px;
     border: 1px solid lightgray;
@@ -30,10 +33,10 @@
     cursor:pointer;
   }
   @media screen and (max-width: 480px) {
-    .card{
-      margin-left:70px;
+    body{
+      margin-left: 70px;
     }
     .card_info{
-      width:240px;
+      width:260px;
     }
   }

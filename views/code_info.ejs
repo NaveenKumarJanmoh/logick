@@ -1,10 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- -->
+        <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="/css/code_info.css">
-
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -20,9 +21,41 @@
           }); 
         });
         </script>
-      
     </head>
     <body>
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">
+                <img src="https://tinyurl.com/y7yk7e7x"/>
+            </a>
+            <!--menu-btn----------->
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><form action="" method="post"><button type="submit">account</button></form></li>  
+                <li><a href="#">code</a>
+                    <ul class="dropdown__menu">
+                        <li><form action="code_upload" method="POST"><button type="submit">upload</button></form></li>
+                        <li><form action="code_purchase" method="POST"><button type="submit">purchase</button></form></li>
+                    </ul>
+                </li>
+                <li><a href="#">course</a>
+                    <ul class="dropdown__menu">
+                        <li><form action="course_upload" method="post"><button type="submit">upload</button></form></li>
+                        <li><form action="course_purchase" method="post"><button type="submit">purchase</button></form></li>
+                    </ul>
+                </li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+            </ul>
+        </nav>
+
         <div class="info_div">
             <div class="div_info">
                <!-- <img class="vid_img" src="https://tinyurl.com/wm3r3zd"/>-->

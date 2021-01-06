@@ -5,9 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- -->
         <link rel="stylesheet" href="css/code.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <div>
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">
+                <img src="https://tinyurl.com/y7yk7e7x"/>
+            </a>
+            <!--menu-btn----------->
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><form action="account" method="post"><button type="submit">account</button></form></li>  
+                <li><a href="#">code</a>
+                    <ul class="dropdown__menu">
+                        <li><form action="code_upload" method="POST"><button type="submit">upload</button></form></li>
+                        <li><form action="code_purchase" method="POST"><button type="submit">purchase</button></form></li>
+                    </ul>
+                </li>
+                <li><a href="#">course</a>
+                    <ul class="dropdown__menu">
+                        <li><form action="course_upload" method="post"><button type="submit">upload</button></form></li>
+                        <li><form action="course_purchase" method="post"><button type="submit">purchase</button></form></li>
+                    </ul>
+                </li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+                <li><a href="#">Title</a></li>
+            </ul>
+        </nav>
+        <div class="btn_form_div">
             <form action="/code/python" method="GET" name="subject">
                 <a href="#">
                     <button type="submit"><img src="https://tinyurl.com/yc6uxgox"/> Python</button>
