@@ -45,6 +45,7 @@ app.post('/authentication', function(request, response) {
 				response.redirect("http://localhost:3000/code.html");
 				response.end();
 			}
+			//girer38232@1092df.com
 			else{
 				connection.query('insert into logic_ac values(?,?)',[username,password], function(error, results, fields) {
 					if(error)
