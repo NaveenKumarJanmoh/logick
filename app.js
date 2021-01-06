@@ -42,7 +42,7 @@ app.post('/authentication', function(request, response) {
 			if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
-				response.redirect("http://localhost:3000/code.html");
+				response.redirect("https://logick.herokuapp.com/code.html");
 				response.end();
 			}
 			else{
@@ -52,7 +52,7 @@ app.post('/authentication', function(request, response) {
 					else{
 						request.session.loggedin = true;
 						request.session.username = username;
-						response.redirect("http://localhost:3000/code.html");
+						response.redirect("https://logick.herokuapp.com/code.html");
 						response.end();
 					}
 				});
