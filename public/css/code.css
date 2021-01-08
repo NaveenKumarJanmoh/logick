@@ -1,6 +1,16 @@
 *{
   box-sizing: border-box;
 }
+.search{
+  position: absolute;
+  margin-left: 320px;
+  width:700px;
+  height: 50px;
+  margin-top: -70px;
+}
+::placeholder{
+  font-size: 15px;
+}
 form a button img{
     margin-right: 15px;
     height: 40px;
@@ -27,14 +37,19 @@ form a button img{
     width:90%;
     margin-left:140px;
     padding:20px 0px;
-    margin-top: 150px;
+    margin-top: 200px;
   }
   .btn_form_div form{
-      float:left;
-      
+      float:left;   
   }
   @media screen and (max-width: 480px) {
     .btn_form_div{
       margin-left:20px;
+    }
+    .search{   
+      height: 40px;
+      margin-top: -70px;
+      margin-left: 22px;
+      width:350px;
     } 
   }

@@ -19,6 +19,7 @@
             </label>
             <!--menu-->
             <ul class="menu">
+                <li><a href="http://localhost:3000">home</a></li>
                 <li><a href="#">code</a>
                     <ul class="dropdown__menu">
                         <li><form action="code_upload" method="POST"><button type="submit">upload</button></form></li>
@@ -36,6 +37,7 @@
                 <li><a href="#">Title</a></li>
                 <li><a href="#">Title</a></li>
                 <li><a href="#">Title</a></li>  
+                <li><form action="course_upload" method="post"><button type="submit">logout</button></form></li>
             </ul>
         </nav>
         <div class="card">
@@ -47,7 +49,7 @@
               <div class="creator"><%=data[i].creator%></div>
               <div class="rate"><%=data[i].rate%> start</div>
               <div class="price">&#8377;<%=data[i].price%></div>
-              <form action="/code_info/<%=data[i].id%>" name="id" method="get">
+              <form action="/code_info/<%=data[i].id%>" name="id" method="POST">
                 <button type="submit" class="goto">go to</button>
               </form>
             </div>

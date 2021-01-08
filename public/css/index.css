@@ -1,7 +1,9 @@
+*{
+    font-family: calibri;
+}
 nav{
     margin:0px;
     padding: 0px;
-    font-family: calibri;
 }
 nav{
     box-sizing: border-box;
@@ -13,7 +15,14 @@ nav a{
     text-decoration: none !important;
 }
 .logo img{
-    height: 20px;
+    height: 25px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -20px;
+    color: #5a76fd;
+}
+.logo h1{
+    color: #5a76fd;
 }
 nav{
     display: flex !important;
@@ -176,6 +185,14 @@ nav .menu-btn{
     .dropdown__menu{
         left: 130px;
     }
+    .logo img{
+        height: 20px;
+        margin-left: 110px;
+        margin-top: -20px;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
 }
 
 .banner_content{
@@ -201,4 +218,26 @@ nav .menu-btn{
 
 .menu li:hover > .dropdown__menu {
     display: block;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #232F3E;;
+    color: white;
+    margin: none;
+    padding: 10px 0px;
+    margin: 0;
+    border-radius: 4px;
+ }
+
+ .footer .center a{
+     padding: 10px;
+     color: gray;
+     font-size: 20px;
+ }
+ .footer ul li{
+    list-style: none;
+    padding: 10px;
 }

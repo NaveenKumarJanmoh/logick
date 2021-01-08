@@ -5,12 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- -->
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
     <body>
         <nav>
             <!--logo-->
             <a href="#" class="logo">
-                <img src="https://tinyurl.com/y7yk7e7x"/>
+                <h1>LOGIKFACTORY</h1>
+                <img src="https://tinyurl.com/yxcwnhmq"/>
             </a>
             <!--menu-btn----------->
             <input class="menu-btn" type="checkbox" id="menu-btn"/>
@@ -32,20 +35,99 @@
                         <li><form action="course_purchase" method="post"><button type="submit">purchase</button></form></li>
                     </ul>
                 </li>
-                <li><a href="#">Title</a></li>
-                <li><a href="#">Title</a></li>
-                <li><a href="#">Title</a></li>
-                <li><a href="#">Title</a></li>
-                <li><a href="#">Title</a></li>
             </ul>
         </nav>
+        
+        
+
+<!-- HTML generated using hilite.me -->
+<i><div style="background: transparent;overflow:auto;width:auto;position: absolute;height: 400px;margin-top: -200px;">
+    <marquee behavior="scroll" direction="up" scrollamount="3" style="height:400px;">
+
+        <pre style="margin: 0; line-height: 125%">
+            <span style="color: #0000aa">
+                print</span>(<span style="color: #aa5500">&quot;Hello, World!&quot;</span>)
+        </pre>
+        
+        <pre style="margin: 0; line-height: 125%">      
+                System.<span style="color: #1e90ff">out</span>.<span style="color: #1e90ff">println</span>(<span style="color: #aa5500">&quot;Hello Java&quot;</span>); 
+       </pre>
+       <pre style="margin: 0; line-height: 125%">
+
+       <span style="color: #0000aa">class</span> <span style="color: #00aa00;">Simple</span>{  }
+       </pre>
+       <pre>
+        <span style="color: #0000aa">public</span> <span style="color: #0000aa">static</span> <span style="color: #00aaaa">void</span> <span style="color: #00aa00">main</span>(String args[]){
+        </pre>
+       <pre style="margin: 0; line-height: 125%"> <span style="color: #aaaaaa; font-style: italic">&lt;!-- This is a comment --&gt;</span>
+
+        <span style="color: #1e90ff; font-weight: bold">&lt;p&gt;</span>This is a paragraph.<span style="color: #1e90ff; font-weight: bold">&lt;/p&gt;</span>
+        </pre>
+        <pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">SELECT</span> * <span style="color: #0000aa">FROM</span> <span style="color: #0000aa">table_name</span>; 
+        </pre>
+
+        <pre style="margin: 0; line-height: 125%"> <span style="color: #0000aa">var</span> x, y, z;       <span style="color: #aaaaaa; font-style: italic">// Declare Variables</span>
+            x = <span style="color: #009999">5</span>; y = <span style="color: #009999">6</span>;      <span style="color: #aaaaaa; font-style: italic">// Assign Values</span>
+            z = x + y;         <span style="color: #aaaaaa; font-style: italic">// Compute Values </span>
+        </pre>
+
+
+    </marquee>
+ </div></i>
+ 
+ 
+   
+
         <div class="banner_image">
         <div class="banner_content">
-            <h1>Welcome to <span>LOGIKFACTORY.</span>
+            <h1>Welcome to <span>LOGIKFACTORY</span>
             </h1>
-            <p>....Daily quotes are here....</p>
+            <i><p style="color: #1e90ff;">online marketplace to do business with codes and courses</p>
+            <p style="color: #1e90ff;">buy and sell it!! Learn and earn!!</p></i>
+            <p id="type_"></p>
             </form>
         </div>
         </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="footer">
+            <ul>
+                <li><h4>Contact us</h4></li>
+                <li><i class="fa fa-map-marker pr-3 mt-2" aria-hidden="true"></i> About Us</li>
+                <li><i class="fa fa-envelope pr-3 mt-2" aria-hidden="true"></i> Our Services</li>
+                <li><i class="fa fa-phone-square  pr-3 mt-2" aria-hidden="true"></i> Tearm and Condition</li>
+            </ul>
+            <ul>
+                <li><h4>Others</h4></li>
+                <li>About Us</li>
+                <li>Our Services</li>
+                <li>Tearm and Condition</li>
+                <li>Privacy Policy</li>
+                <li>FAQ?</li>
+            </ul>
+            <center class="center">
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <p>@2020 Copy rights<p>
+            </center>
+        </div>
+
+        <script>
+            var i = 0;
+            var text = '....Daily quotes are here....';
+            var speed = 200;
+            
+            function typetext() {
+              if (i < text.length) {
+                document.getElementById("type_").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typetext, speed);
+              }
+            }
+            typetext();
+        </script>
+
     </body>
 </html>

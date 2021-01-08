@@ -97,7 +97,7 @@ app.post('/course_purchase', function (request, response) {
         response.redirect("http://localhost:3000/account.html");
 });
 
-app.get('/code/:subject', function (request, response) {
+app.post('/code/:subject', function (request, response) {
 	if(request.session.loggedin){
 		connection.query("SELECT * FROM codes where subject = ?",[request.params.subject], function (error, rows, fields) {
 			if (!!error) {
@@ -111,7 +111,7 @@ app.get('/code/:subject', function (request, response) {
         response.redirect("http://localhost:3000/account.html");
 });
 
-app.get('/code_info/:id', function (request, response) {
+app.post('/code_info/:id', function (request, response) {
 	if(request.session.loggedin){
 		connection.query("SELECT * FROM codes where id = ?",[request.params.id], function (error, rows, fields) {
 			if (!!error) {
