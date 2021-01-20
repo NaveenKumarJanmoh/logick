@@ -193,6 +193,9 @@ nav .menu-btn{
     .logo h1{
         font-size: 20px;
     }
+    .textscroll{
+        display: none;
+    }
 }
 
 .banner_content{
